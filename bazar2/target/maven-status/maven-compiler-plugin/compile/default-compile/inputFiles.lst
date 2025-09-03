@@ -1,0 +1,17 @@
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Bazar2Application.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Controller\ClienteController.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Controller\ProductoController.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Controller\VentaController.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\DTO\VentaClienteDto.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\model\Cliente.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\model\Producto.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\model\Venta.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Repository\IClienteRepository.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Repository\IProductoRepository.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Repository\IVentaRepository.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Service\ClienteService.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Service\IClienteService.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Service\IProductoService.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Service\IVentaService.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Service\ProductoService.java
+C:\Users\Franp\Downloads\bazar2\bazar2\src\main\java\com\example\bazar2\Service\VentaService.java
