@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  app_bazar2:
+    build: bazar2
+    mem_limit: 512m
+    ports:
+      - "8080:8080"
+    environment:
+      DB_URL: jdbc:mysql://bazar:3306/bazar?createDatabaseIfNotExist=true&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
+      DB_USER: admin
+      DB_PASS: admin123
+    restart: on-failure
+    depends_on:
+      bazar:
+        condition: service_healthy
+    networks:
+      - bazar_network
+
+  bazar:
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_PASSWORD: admin123
+      MYSQL_DATABASE: bazar
+      MYSQL_USER: admin
+    restart: always
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "admin", "-p1234"]
+      timeout: 10s
+      retries: 10
+      interval: 30s
+      start_period: 30s
+    networks:
+      - bazar_network
+
+networks:
+  bazar_network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+
